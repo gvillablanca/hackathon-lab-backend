@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/codahale/bcrypt-ruby.git
+  revision: f2db689ba567d1a018f4dacb1ccf909adc93e887
+  specs:
+    bcrypt (3.1.11)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -35,11 +41,17 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    annotate (2.7.2)
+      activerecord (>= 3.2, < 6.0)
+      rake (>= 10.4, < 13.0)
     arel (6.0.4)
+    ast (2.4.0)
+    awesome_print (1.8.0)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
     builder (3.2.3)
     byebug (10.0.0)
+    coderay (1.1.2)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -50,6 +62,12 @@ GEM
     concurrent-ruby (1.0.5)
     crass (1.0.3)
     debug_inspector (0.0.3)
+    devise (4.4.2)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 6.0)
+      responders
+      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.23-x64-mingw32)
@@ -64,19 +82,33 @@ GEM
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
+    jquery-ui-rails (6.0.1)
+      railties (>= 3.2.16)
     json (1.8.6)
     loofah (2.2.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.0)
       mini_mime (>= 0.1.1)
+    materialize-sass (0.100.2)
+      sass (~> 3.3)
+    method_source (0.8.2)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
     nokogiri (1.8.2-x64-mingw32)
       mini_portile2 (~> 2.3.0)
+    orm_adapter (0.5.0)
+    parallel (1.12.1)
+    parser (2.5.0.4)
+      ast (~> 2.4.0)
     pg (0.21.0-x64-mingw32)
+    powerpack (0.1.1)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     rack (1.6.9)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -104,11 +136,23 @@ GEM
       activesupport (= 4.2.10)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
+    rainbow (3.0.0)
     rake (12.3.0)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rdoc (4.3.0)
+    responders (2.4.0)
+      actionpack (>= 4.2.0, < 5.3)
+      railties (>= 4.2.0, < 5.3)
+    rubocop (0.53.0)
+      parallel (~> 1.10)
+      parser (>= 2.5)
+      powerpack (~> 0.1)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.0, >= 1.0.1)
+    ruby-progressbar (1.9.0)
     sass (3.5.5)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -123,6 +167,10 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    simple_form (3.5.1)
+      actionpack (> 4, < 5.2)
+      activemodel (> 4, < 5.2)
+    slop (3.6.0)
     sprockets (3.7.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -142,6 +190,9 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (4.1.7)
       execjs (>= 0.3.0, < 3)
+    unicode-display_width (1.3.0)
+    warden (1.2.7)
+      rack (>= 1.0)
     web-console (2.3.0)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -152,14 +203,23 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  annotate
+  awesome_print (~> 1.8)
+  bcrypt!
   byebug
   coffee-rails (~> 4.1.0)
+  devise
   jbuilder (~> 2.0)
   jquery-rails
+  jquery-ui-rails
+  materialize-sass (~> 0.100.1)
   pg (~> 0.15)
+  pry (~> 0.10.4)
   rails (= 4.2.10)
+  rubocop (~> 0.53.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  simple_form (~> 3.5, >= 3.5.1)
   turbolinks
   tzinfo-data
   uglifier (>= 1.3.0)

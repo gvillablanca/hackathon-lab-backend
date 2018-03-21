@@ -12,5 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require alertify.min
+//= require main
 //= require turbolinks
+//= require materialize-sprockets
 //= require_tree .
+
+$(document).on('turbolinks:load', function() {
+  $('.dropdown-button').dropdown();
+  $('select').material_select();
+});
