@@ -11,6 +11,11 @@
 #  category_id :integer
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+<<<<<<< HEAD
+=======
+#  price       :integer          default(0), not null
+#  description :string(250)
+>>>>>>> creacion de columnas, conexoin a la base de datos y mostrar vista de admin->product los productos con las nuevas columnas
 #
 # Indexes
 #
