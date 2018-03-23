@@ -1,7 +1,32 @@
-<h1>Home Admin</h1>
-
-<ul>
-  <li><%= link_to "Categories", admin_categories_path %></li>
-  <li><%= link_to "Products", admin_products_path %></li>
-  <li><%= link_to "Customers", admin_customers_path %></li>
-</ul>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 right-align">
+        <%= image_tag("logos/logo-color.png", height: '80') %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s2 left-align">
+        <%= image_tag("icons/user-gray.png", height: '100') %>
+      </div>
+      <div class="col s9 left-align">
+        <h5>¡Bienvenido! <%= current_user.email %></h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4 offset-s4"> 
+        <ul>
+          <li class="waves-effect waves-light btn grey darken-4">
+            <%= link_to "Ver Categorías", admin_categories_path %>
+          </li>
+          <li class="waves-effect waves-light btn grey darken-4">
+            <%= link_to "Ver Productos", admin_products_path %>
+          </li>
+          <li class="waves-effect waves-light btn grey darken-4">
+            <%= link_to "Ver Clientes", admin_customers_path %>
+          </li>
+        </ul>
+      </div>  
+    </div>  
+  </div>
+</section>
