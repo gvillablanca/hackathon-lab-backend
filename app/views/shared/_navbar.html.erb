@@ -1,16 +1,25 @@
-<<<<<<< HEAD
-<footer>
+  <ul id="dropdown2" class="dropdown-content">
+    <li>
+      <a href="<%= new_user_session_path %>">Sign in</a>
+    </li>
+  </ul>
   <nav>
-    <div class="nav-wrapper blue-grey darken-3 ">
+    <div class="nav-wrapper blue-grey darken-3">
       <a href="#" class="brand-logo center">
-        <img src="/assets/img/logo-white.png" class="responsive-img logo"/>       
+        <img src="/assets/img/logo-white.png" class="responsive-img icon"/>       
       </a>
-      <ul id=" nav-mobile" class="left ">
-        <%= link_to  "Home", unauthenticated_root_path %>
+
+      <ul id=" nav-mobile" class="left">
+        <a href="<%= unauthenticated_root_path %>">
+          <img src="/assets/img/HOME-BL.png" class="responsive-img icon"/>
+        </a>
       </ul>
+
       <ul id=" nav-mobile" class="left ">
-          <%= link_to  "Products", products_path %>
-        </ul>
+          <a href="<%= products_path %>">
+          <img src="/assets/img/teawhite.png" class="responsive-img icon"/>
+        </a>
+      </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>
           <a class="dropdown-button" href="#!" data-activates="dropdown1">
@@ -20,29 +29,12 @@
           <a href="<%= new_user_session_path %>">Sign in</a>
         </li>
       </ul>
+            <ul id="nav-mobile2" class="right hide-on-large-only">
+        <li>
+          <a class="dropdown-button" href="#!" data-activates="dropdown2">
+              <i class="material-icons right">menu</i>
+          </a>
+        </li>
+      </ul>
     </div>
   </nav>
-</footer>
-
-=======
-<nav>
-  <div class="nav-wrapper teal ">
-    <a href="#" class="brand-logo center">Logo</a>
-    <ul id=" nav-mobile" class="left ">
-      <%= link_to  "Home", unauthenticated_root_path %>
-    </ul>
-    <ul id=" nav-mobile" class="left ">
-        <%= link_to  "Products", products_path %>
-      </ul>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li>
-        <a class="dropdown-button" href="#!" data-activates="dropdown1">
-        </a>
-      </li>
-      <li>
-        <a href="<%= new_user_session_path %>">Sign in</a>
-      </li>
-    </ul>
-  </div>
-</nav>
->>>>>>> creacion de columnas, conexoin a la base de datos y mostrar vista de admin->product los productos con las nuevas columnas
