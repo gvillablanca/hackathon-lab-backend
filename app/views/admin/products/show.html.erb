@@ -1,14 +1,13 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Name:</strong>
   <%= @product.name %>
 </p>
 
-<p>
-  <strong>Url:</strong>
-  <%= @product.url %>
-</p>
+<img src="<%= @product.url %>" class="responsive-img producto"/>
+
 
 <p>
   <strong>Quantity:</strong>
@@ -33,5 +32,8 @@
   <%= @product.description %>
 </p>
 
+
 <%= link_to 'Edit', edit_admin_product_path(@product) %> |
 <%= link_to 'Back', admin_products_path %>
+
+</div>
