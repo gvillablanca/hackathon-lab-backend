@@ -10,3 +10,19 @@
   background-size: cover;
   background-position: center;
 }
+
+
+/* LOGIN PAGE */
+#login {
+  height: 100vh;
+  padding: 20vh 0;
+  
+  .logo {
+    width: 100%;
+    margin-bottom: 30rem 0;
+    
+    img {
+      width: 100%;
+    }
+  }
+}
