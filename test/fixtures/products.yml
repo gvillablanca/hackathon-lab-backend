@@ -11,6 +11,18 @@
 #  category_id :integer
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  price       :integer          default(0), not null
+#  description :string(250)
+#
+# Indexes
+#
+#  index_products_on_category_id  (category_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (category_id => categories.id)
+#
+
 <<<<<<< HEAD
 =======
 #  price       :integer          default(0), not null
