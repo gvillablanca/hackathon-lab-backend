@@ -41,14 +41,16 @@ ActiveRecord::Schema.define(version: 20180316100106) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.string   "name",                       null: false
-    t.boolean  "active",      default: true, null: false
+    t.string   "name",                                   null: false
+    t.boolean  "active",                  default: true, null: false
     t.text     "url"
-    t.integer  "quantity",    default: 0,    null: false
-    t.decimal  "amount",      default: 0.0,  null: false
+    t.integer  "quantity",                default: 0,    null: false
+    t.decimal  "amount",                  default: 0.0,  null: false
     t.integer  "category_id"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
+    t.integer  "price",                   default: 0,    null: false
+    t.string   "description", limit: 250
   end
 
   add_index "products", ["category_id"], name: "index_products_on_category_id", using: :btree
