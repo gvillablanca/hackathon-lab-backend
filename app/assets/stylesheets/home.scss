@@ -26,3 +26,28 @@
     }
   }
 }
+
+.cont {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+
+.cont > * {
+  padding: 2em;
+  // margin: 2em;
+}
+
+li a {
+  color: gray;
+}
+
+h3 {
+  padding: 0 !important;
+}
+
+.logo {
+  height: 2em !important;
+}
+
