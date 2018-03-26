@@ -1,3 +1,4 @@
+# TEA TIME
 
 ![loading Tea Time](https://i.imgur.com/SfJzfOb.jpg)
 
@@ -73,4 +74,5 @@ En primera instancia, se realizaron pequeñas entrevistas aproximadamente a 4 pe
 <a href="https://marvelapp.com/project/2834239/"> Flujo User aquí</a>
 
 
-
+## Desarrollado para
+[Laboratoria](http://www.laboratoria.la/)
